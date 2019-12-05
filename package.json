@@ -1,0 +1,33 @@
+{
+  "name": "ts-passthrough-test-helper",
+  "version": "1.0.0",
+  "description": "use the compiler api to test method calls are passed through",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "prettier": "prettier --write \"**/*/*.ts\"",
+    "lint": "tslint -c tslint.json -e node_modules/** \"src/*.ts\" \"__tests__/*.ts\"",
+    "build": "tsc",
+    "prebuild": "rimraf dist"
+  },
+  "author": "Tony Hallett",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "prettier": "1.19.1",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1"
+  },
+  "keywords": ["typescript","test","passthrough","interface","jest"],
+  "bugs": "https://github.com/tonyhallett/ts-passthrough-test-helper/issues",
+  "repository": "github:tonyhallett/ts-passthrough-test-helper",
+  "files": ["dist"]
+}
