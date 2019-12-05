@@ -1,8 +1,8 @@
 {
   "name": "ts-passthrough-test-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "use the compiler api to test method calls are passed through",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest --coverage",
     "prettier": "prettier --write \"**/*/*.ts\"",
